@@ -6,8 +6,8 @@ const resume=document.querySelector('.resumeC');
 const speed=document.querySelector('#speedM');
 
 let speedv;
-if(location.hash!='' && location.hash!='#' ){
-  speedv=location.hash.substr(1);
+if(location.search!='' && location.search!='?speed' ){
+  speedv=location.search.substr(7);
   speed.value=speedv;
 }
 else{
@@ -15,8 +15,9 @@ else{
 }
 
 speed.addEventListener('change',function(){
-  location.href=`${location.origin}#${speed.value}`;
-  location.reload();
+  location.href=`${location.origin}?speed=${speed.value}`;
+  console.log(`${location.href}?speed=${speed.value}`);
+  dd
 })
 manageD();
 

@@ -15,9 +15,10 @@ else{
 }
 
 speed.addEventListener('change',function(){
-  location.href=`${location.origin}?speed=${speed.value}`;
-  console.log(`${location.href}?speed=${speed.value}`);
-  dd
+    //for github we have to made a change in url otherwise we donot have to add /snake into the url
+  location.href=`${location.origin}/snake?speed=${speed.value}`;
+  //console.log(`${location.href}/snake?speed=${speed.value}`);
+  
 })
 manageD();
 

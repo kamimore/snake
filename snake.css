@@ -85,3 +85,16 @@ canvas{
     height:250;
   }
 }
+#speedM{
+  color: red;
+  border: 0px solid transparent;
+  /* background: red; */
+  outline: none;
+  border-radius: 6%;
+  background: radial-gradient(#0c0c0c, transparent);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+
+}

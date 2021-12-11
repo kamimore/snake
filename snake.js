@@ -3,7 +3,21 @@ const HighestScore=document.getElementById('highest-score');
 const arrowT=document.querySelectorAll('.fas');
 const restart=document.querySelector('.restart');
 const resume=document.querySelector('.resumeC');
+const speed=document.querySelector('#speedM');
 
+let speedv;
+if(location.hash!='' && location.hash!='#' ){
+  speedv=location.hash.substr(1);
+  speed.value=speedv;
+}
+else{
+  speedv=1
+}
+
+speed.addEventListener('change',function(){
+  location.href=`${location.origin}#${speed.value}`;
+  location.reload();
+})
 manageD();
 
 function manageD()
@@ -28,6 +42,7 @@ function manageD()
   if(window.outerWidth<=400)
   {
     document.querySelector('#main').style.width='250px'
+    document.querySelector('#main').style.marginTop='-3.8rem'
     document.querySelectorAll('.arrowc')[1].style.paddingLeft='1.6rem'
     canvas.width='250';
     canvas.height='200';
@@ -241,7 +256,7 @@ snake.pop();
 
       collisionDetecton();
 
-  },90);
+  },speedv*100);
 }
 function collisionDetecton(){
   //console.log("check");

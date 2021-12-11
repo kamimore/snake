@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: black;
+  height: 100vh;
+  color:white;
+  font-family: 'Architects Daughter', cursive;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: #f98383;
+  font-size:3rem;
+  font-weight: bold;
+  margin-bottom:1rem;
+  text-align: center;
+}
+.before{
+  color:white;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.3rem;
+  font-weight: bolder;
+  display:inline-block;
+}
+
+.after,#highest-score{
+  color:red;  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.3rem;
+  display:inline-block;
+  text-align:center;
+  text-decoration: underline;
+
+}
+
+canvas{
+  border:5px solid #f98383;
+  border-radius: 1rem;
+}
+
+.set-score{
+  display: flex;
+  justify-content:space-between;
+}
+.arrowc
+{
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-top: 6rem;
+  padding-left:1rem;
+  padding-right:1rem;
+
+}
+.arrowc p{
+ padding-bottom:1rem;
+}
+.fas{
+  color: red;
+    font-size: 2rem;
+    /*padding: 2rem 0.5rem;*/
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  text-align:center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width:530px)
+{
+  #canvas{
+    width:200;
+    height:250;
+  }
+}

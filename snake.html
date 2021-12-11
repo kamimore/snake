@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./snake.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="arrowc">
+      <p><i class="fas fa-arrow-alt-circle-up up"></i></p>
+      <p><i class="fas fa-arrow-alt-circle-left left"></i></p>
+    </div>
+<div id="main">
+      <h1>Snake Game</h1>
+      <div class='set-score'> 
+        <p id="score"><span class="before"></span></p>
+        <p><span id="highest-score"></span></p>
+      </div>
+      
+      <canvas id="canvas" width="400" height="300">
+      
+      </canvas>
+      <div class='footer'>
+        <p class='resumeC'>Stop</p>
+        <p class='restart'>Restart</p>
+
+      </div>
+      
+      
+</div>
+<div class="arrowc">
+  <p><i class="fas fa-arrow-alt-circle-right right"></i></p>
+  <p><i class="fas fa-arrow-alt-circle-down down"></i></p>
+</div>
+
+
+
+  </body>
+  <script src="./snake.js" charset="utf-8"></script>
+</html>
